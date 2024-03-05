@@ -46,7 +46,7 @@ README.md
 ### Day 1: Project Initialization and API Selection  
 - Created the project repository and initialized with base files.  
 - Researched and selected an appropriate API for the project.  
-    [https://](https://www.dnd5eapi.co)  
+    [https://https://www.dnd5eapi.co]  
 - Outlined the application's 3-page structure.  
   
 index.html wireframe:  
