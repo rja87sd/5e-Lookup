@@ -44,9 +44,10 @@ README.md
   
 ## Development Log  
 ### Day 1: Project Initialization and API Selection  
--Created the project repository and initialized with base files.  
--Researched and selected an appropriate API for the project.  
--Outlined the application's 3-page structure.  
+- Created the project repository and initialized with base files.  
+- Researched and selected an appropriate API for the project.  
+    [https://](https://www.dnd5eapi.co)  
+- Outlined the application's 3-page structure.  
   
 index.html wireframe:  
 ![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/1b03e2d2-dda8-49f5-a037-6dfce6974406)  
