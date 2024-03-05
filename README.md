@@ -32,3 +32,21 @@ Week 8 Day 5
 
 // Main SCSS File  
 // main.scss: // Import all above files using @import statements.  
+
+
+Project Overview  
+This project aims to build a 3-page application that showcases advanced web development skills, including API integration, object-oriented programming with JavaScript, and sophisticated styling using SCSS with a 7-1 architecture. The application will consume an API to display meaningful data tailored to the project's theme, ensuring relevance and coherence in its presentation.  
+  
+Project Setup  
+Repository Name: 5e Lookup  
+File Structure:  
+index.html  
+style.scss (with 7-1 structure folders)  
+script.js  
+README.md  
+  
+Development Log  
+Day 1: Project Initialization and API Selection  
+-Created the project repository and initialized with base files.  
+-Researched and selected an appropriate API for the project.  
+-Outlined the application's 3-page structure.  
