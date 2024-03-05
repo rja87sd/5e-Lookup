@@ -1,0 +1,12 @@
+.btn{
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.9;
+    }
+}
+
+.btn--cancel{
+    background-color: $danger;
+}
