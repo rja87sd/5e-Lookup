@@ -57,3 +57,8 @@ dashboard.html wireframe
 
 about.html wireframe  
 ![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/f5e33197-b5fa-4f89-a522-05fc41f664d0)  
+
+### Day 2: API Integration and Class Implementation  
+- Implemented the DataClass to model API data objects.  
+- Developed functions for fetching data from the API.  
+- Started integrating API data into the frontend.  

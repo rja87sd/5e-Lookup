@@ -1,4 +1,13 @@
-.header{
-    background-color: #f8f8f8;
+header{
     padding: 1rem 0;
+
+@include breakpoint-sm{
+    background-color: #777;
+}
+@include breakpoint-md{
+    background-color: red;
+}
+@include breakpoint-lg{
+    background-color: black;
+}
 }

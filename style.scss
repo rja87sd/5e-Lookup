@@ -1,0 +1,20 @@
+// Abstracts
+@import 'sass/abstracts/variables';
+@import 'sass/abstracts/functions';
+@import 'sass/abstracts/mixins';
+@import 'sass/abstracts/variables';
+@import 'sass/abstracts/query-selectors';
+
+// Base
+@import 'sass/base/base';
+@import 'sass/base/typography';
+
+// Components
+@import 'sass/components/buttons';
+@import 'sass/components/cards';
+
+// Layout
+@import 'sass/layout/header.scss';
+@import 'sass/layout/footer.scss';
+@import 'sass/layout/main-content.scss';
+

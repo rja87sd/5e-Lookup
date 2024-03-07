@@ -26,18 +26,3 @@ $breakpoint-lg: 1200px;
     @content;
   }
 }
-
-//! THIS WILL BE INSIDE _header.scss
-.header{
-    background-color: $primary;
-    color: black;
-@include breakpoint-sm{
-    background-color: #777;
-}
-@include breakpoint-md{
-    background-color: red;
-}
-@include breakpoint-lg{
-    background-color: black;
-}
-}
