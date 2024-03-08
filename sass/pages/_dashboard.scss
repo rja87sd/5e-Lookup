@@ -1,0 +1,9 @@
+#dash-main {
+  z-index: 1;
+  position: relative;
+  top: 15%;
+  margin: auto;
+  width: 75%;
+  height: auto;
+  @include flex-column;
+}

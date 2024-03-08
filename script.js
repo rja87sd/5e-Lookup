@@ -32,7 +32,7 @@ class Spell {
 
     // Populate the spell card with spell information
     spellCard.innerHTML = `
-      <h3>${this.name}</h3>
+      <h2>${this.name}</h2>
       <div class="spell-details">
 
       </div>
@@ -54,7 +54,6 @@ class Spell {
       // Display the detailed information in the spell card
       const spellDetailsDiv = document.querySelector(".spell-details");
       spellDetailsDiv.innerHTML = `
-      <p><strong>Name:</strong> ${spellData.name}</p>
       <p><strong>Level:</strong> ${spellData.level}</p>
       <p><strong>School:</strong> ${spellData.school.name}</p>
       <p><strong>Ritual:</strong> ${spellData.ritual ? "Yes" : "No"}</p>
@@ -64,7 +63,9 @@ class Spell {
       }</p>
       <p><strong>Range:</strong> ${spellData.range}</p>
       <p><strong>At Higher Levels:</strong> ${spellData.higher_level}</p>
-
+      <br>
+      <hr>
+      <br>
     `;
 
       // Log the spell object to console

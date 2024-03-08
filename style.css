@@ -10,8 +10,6 @@
 
 body {
   font-size: 1.6rem;
-  height: 100vh;
-  position: relative;
 }
 
 header {
@@ -23,9 +21,7 @@ main {
 }
 
 footer {
-  height: 70px;
-  position: absolute;
-  bottom: 0;
+  height: 40px;
 }
 
 body {
@@ -61,45 +57,73 @@ h6 {
   font-size: 0.9rem;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .btn {
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   border: none;
+  height: auto;
+  width: 100px;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
   cursor: pointer;
+  border-radius: 5px;
 }
 .btn:hover {
   opacity: 0.9;
 }
 
-.spell-card {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  background-color: #fff;
-}
-
-header {
-  padding: 1rem 0;
-}
-@media (min-width: 481px) and (max-width: 768px) {
-  header {
-    background-color: #777;
-  }
-}
-@media (min-width: 769px) and (max-width: 992px) {
-  header {
-    background-color: red;
-  }
-}
-@media (min-width: 993px) {
-  header {
-    background-color: black;
-  }
-}
-
-.footer {
-  background-color: #222;
-  color: white;
+.btn--enter {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  height: auto;
+  width: 100px;
+  background-color: #ff0000;
   text-align: center;
-  padding: 1rem 0;
+  line-height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px black;
+  transition: opacity 0.3s ease;
+  animation: fadeIn 5s ease-out;
+}
+.btn--enter a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.btn--enter:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.spell-card {
+  box-shadow: 5px 5px 5px #000000;
+  padding: 1rem;
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 5px;
+  max-height: 500px;
+  overflow: scroll;
+}
+
+.spellSearchForm #spellName {
+  padding: 10px;
+  font-size: 16px;
 }
 
 header {
@@ -107,4 +131,111 @@ header {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: solid 2px #ff0000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 2rem;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+header ul li {
+  list-style: none;
+  font-weight: bold;
+}
+header ul li:hover {
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+}
+header ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  height: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  z-index: 1;
+  position: relative;
+}
+
+.splash-image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.splash-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.splash-banner {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 2rem;
+  border-radius: 10px;
+  animation: fadeIn 5s ease-out;
+}
+
+.splash-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #ffffff;
+  background-color: #000000;
+  animation: fadeIn 10s ease-out;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#dash-main {
+  z-index: 1;
+  position: relative;
+  top: 15%;
+  margin: auto;
+  width: 75%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

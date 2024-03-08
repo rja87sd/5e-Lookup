@@ -1,5 +1,9 @@
 .spell-card{
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 5px $primary-color;
     padding: 1rem;
-    background-color: #fff;
+    background-color: $quaternary-color;
+    color: $text-primary;
+    border-radius: 5px;
+    max-height: 500px;
+    overflow: scroll;
 }

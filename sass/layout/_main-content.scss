@@ -1,6 +1,15 @@
-header {
-    background-color: $primary-color;
-    color: $text-primary;
-    font-family: Arial, Helvetica, sans-serif;
-    border-bottom: solid 2px $secondary-color;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: $tertiary-color;
+  color: $text-tertiary;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  z-index: 1;
+  position: relative;
 }

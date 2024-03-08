@@ -10,11 +10,18 @@
 @import 'sass/base/typography';
 
 // Components
+@import 'sass/components/animations';
 @import 'sass/components/buttons';
 @import 'sass/components/cards';
+@import 'sass/components/forms';
 
 // Layout
-@import 'sass/layout/header.scss';
-@import 'sass/layout/footer.scss';
-@import 'sass/layout/main-content.scss';
+@import 'sass/layout/header';
+@import 'sass/layout/footer';
+@import 'sass/layout/main-content';
+
+// Pages
+@import 'sass/pages/splash';
+@import 'sass/pages/dashboard';
+
 
