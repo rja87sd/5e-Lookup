@@ -62,3 +62,11 @@ about.html wireframe
 - Implemented the DataClass to model API data objects.  
 - Developed functions for fetching data from the API.  
 - Started integrating API data into the frontend.  
+![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/c7a0426a-344d-40c7-bcff-a4f58eaea197)
+![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/fe2c3dff-621f-4c6b-8279-2006aa7a1dec)  
+
+
+### Day 3: Frontend Development and SCSS Styling  
+- Designed the UI for all three pages.  
+- Applied SCSS styling using the 7-1 pattern.  
+- Tested responsive design.  
