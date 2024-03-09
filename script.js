@@ -33,7 +33,7 @@ class Spell {
     // Populate the spell card with spell information
     spellCard.innerHTML = `
       <h2>${this.name}</h2>
-      <div class="spell-details">
+      <div class="spell-card__details">
 
       </div>
     `;
@@ -52,7 +52,7 @@ class Spell {
       const spellData = await response.json();
 
       // Display the detailed information in the spell card
-      const spellDetailsDiv = document.querySelector(".spell-details");
+      const spellDetailsDiv = document.querySelector(".spell-card__details");
       spellDetailsDiv.innerHTML = `
       <p><strong>Level:</strong> ${spellData.level}</p>
       <p><strong>School:</strong> ${spellData.school.name}</p>
@@ -96,11 +96,13 @@ searchForm.addEventListener("submit", async (e) => {
       // Fetch the spell from the API
       const response = await fetch(BASE_URL + "/api/spells/?name=" + spellName);
       const data = await response.json();
-      
+
       console.log(data);
       // If spell is found, display it
       if (data.results.length > 0) {
-        const foundSpell = data.results.find(spell => spell.name.toLowerCase() === spellName.toLowerCase());
+        const foundSpell = data.results.find(
+          (spell) => spell.name.toLowerCase() === spellName.toLowerCase()
+        );
         const spell = new Spell(foundSpell);
         spell.displayToDom();
       } else {

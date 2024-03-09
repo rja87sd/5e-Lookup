@@ -1,6 +1,10 @@
-.spellSearchForm {
-  #spellName {
-    padding: 10px; 
-    font-size: 16px; 
+#spellSearchForm {
+  @include flex;
+  label {
+    color: $text-primary;
   }
+}
+
+#spellName {
+  font-size: 2.4rem;
 }

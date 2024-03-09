@@ -1,9 +1,41 @@
-.spell-card{
-    box-shadow: 5px 5px 5px $primary-color;
-    padding: 1rem;
-    background-color: $quaternary-color;
-    color: $text-primary;
+.spell-card {
+  box-shadow: 5px 5px 5px $primary-color;
+  padding: 1rem;
+  background-color: $quaternary-color;
+  color: $text-primary;
+  border-radius: 5px;
+  max-height: 500px;
+  width: 75%;
+  margin: auto;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  &__details {
+    strong {
+      color: $text-secondary;
+    }
+
+    // Credit to Geeks For Geeks for hr styling.
+    hr {
+      background-color: $secondary-color;
+      height: 2px;
+      border: none;
+    }
+
+  }
+
+  /* Scrollbar Styling */
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #555555;
     border-radius: 5px;
-    max-height: 500px;
-    overflow: scroll;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #333333;
+    border-radius: 5px;
+  }
 }

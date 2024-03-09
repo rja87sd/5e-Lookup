@@ -118,12 +118,43 @@ h6 {
   color: #ffffff;
   border-radius: 5px;
   max-height: 500px;
+  width: 75%;
+  margin: auto;
   overflow: scroll;
+  overflow-x: hidden;
+  /* Scrollbar Styling */
+}
+.spell-card__details strong {
+  color: #ff0000;
+}
+.spell-card__details hr {
+  background-color: #ff0000;
+  height: 2px;
+  border: none;
+}
+.spell-card::-webkit-scrollbar {
+  width: 12px;
+}
+.spell-card::-webkit-scrollbar-thumb {
+  background-color: #555555;
+  border-radius: 5px;
+}
+.spell-card::-webkit-scrollbar-track {
+  background-color: #333333;
+  border-radius: 5px;
 }
 
-.spellSearchForm #spellName {
-  padding: 10px;
-  font-size: 16px;
+#spellSearchForm {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#spellSearchForm label {
+  color: #ffffff;
+}
+
+#spellName {
+  font-size: 2.4rem;
 }
 
 header {
@@ -143,7 +174,8 @@ header {
 }
 header ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 10px;
   gap: 3rem;
 }
 header ul li {
@@ -162,10 +194,15 @@ header ul li a {
 footer {
   position: absolute;
   bottom: 0;
+  border-top: solid 2px #ff0000;
   background-color: #000000;
   color: #ffffff;
   text-align: center;
   height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -231,11 +268,14 @@ main {
 #dash-main {
   z-index: 1;
   position: relative;
+  border: solid 2px #ff0000;
+  background-color: black;
   top: 15%;
   margin: auto;
-  width: 75%;
+  width: 90%;
   height: auto;
+  padding: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
