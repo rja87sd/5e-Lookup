@@ -63,10 +63,31 @@ about.html wireframe
 - Developed functions for fetching data from the API.  
 - Started integrating API data into the frontend.  
 ![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/c7a0426a-344d-40c7-bcff-a4f58eaea197)
-![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/fe2c3dff-621f-4c6b-8279-2006aa7a1dec)  
-
-
+![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/fe2c3dff-621f-4c6b-8279-2006aa7a1dec)
+  
+  
 ### Day 3: Frontend Development and SCSS Styling  
 - Designed the UI for all three pages.  
-- Applied SCSS styling using the 7-1 pattern.  
+-- index.html  
+  ![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/61d18759-5f3d-4c0a-afbd-6b61e9f13f9c)  
+  
+-- dashboard.html  
+![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/685c3ac5-7c85-4384-b0c5-51c6c3801bc0)  
+  
+-- about.html  
+  ![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/20a568a7-53e5-4afd-a8e6-0787f8fe5956)  
+  
+- Applied SCSS styling using the 7-1 pattern.
+-- Screenshot
+![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/6f2b890f-e007-45ee-94e6-3c756617a2e5)  
+  
 - Tested responsive design.  
+-- dashboard responsive design  
+![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/b3b55be1-ae64-4fef-b3be-1378f495e398)
+
+-- index responsive design  
+![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/b95ee29f-0bda-45c5-8f62-3df4e94439be)  
+
+-- about responsive design  
+![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/93bb9e4a-a7ff-418d-b589-cb50fc3a477b)  
+  
