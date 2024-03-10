@@ -77,8 +77,8 @@ about.html wireframe
 -- about.html  
   ![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/20a568a7-53e5-4afd-a8e6-0787f8fe5956)  
   
-- Applied SCSS styling using the 7-1 pattern.
--- Screenshot
+- Applied SCSS styling using the 7-1 pattern.  
+-- Screenshot  
 ![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/6f2b890f-e007-45ee-94e6-3c756617a2e5)  
   
 - Tested responsive design.  
