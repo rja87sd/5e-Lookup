@@ -11,13 +11,20 @@
 }
 
 @mixin flex {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-@mixin flex-center{
   display: flex;
   justify-content: center;
+  gap: 10px;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
