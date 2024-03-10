@@ -91,3 +91,8 @@ about.html wireframe
 -- about responsive design  
 ![image](https://github.com/rja87sd/5e-Lookup/assets/145504216/93bb9e4a-a7ff-418d-b589-cb50fc3a477b)  
   
+### Day 4: Finalizing Features and Testing  
+- Completed all application features.  
+- Conducted thorough testing for bugs and usability issues.  
+- Prepared for deployment.  
+  Completed 03/09/24
