@@ -3,6 +3,7 @@
   position: relative;
   border: solid 2px $secondary-color;
   background-color: $primary-color;
+  color: $text-primary;
   top: 15%;
   margin: auto;
   width: 90%;
@@ -16,6 +17,18 @@
     height: auto;
     width: 10%;
     border-radius: 5px;
+  }
+
+  // Credit to Geeks For Geeks for hr styling.
+  hr {
+    background-color: $secondary-color;
+    height: 2px;
+    width: 100%;
+    border: none;
+  }
+
+  p {
+    text-align: center;
   }
 
   &::-webkit-scrollbar {
