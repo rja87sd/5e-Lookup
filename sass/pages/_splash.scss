@@ -1,43 +1,72 @@
+// Splash page styling. Credit to ChatGPT for assistance and comments.
+
+/* Defines styles for the container holding the splash image */
 .splash-image-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 0;
+  /* Positions the container fixed to the viewport */
+  position: fixed;
+  /* Places the container at the top left corner of the viewport */
+  top: 0;
+  left: 0;
+  /* Makes the container cover the entire viewport */
+  width: 100%;
+  height: 100%;
+  /* Prevents overflow content from being visible */
+  overflow: hidden;
+  /* Sets the stacking order of the container behind other elements */
+  z-index: 0;
 }
 
-
+/* Styles for the splash image itself */
 .splash-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  /* Makes the image fill the entire container */
+  width: 100%;
+  height: 100%;
+  /* Ensures the image covers the container while maintaining aspect ratio */
+  object-fit: cover;
 }
 
+/* Styles for the banner displayed on the splash screen */
 .splash-banner {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    color: $text-primary;
-    background-color: $primary-color;
-    padding: 2rem;
-    border-radius: 10px;
-    animation: fadeIn 5s ease-out;
+  /* Positions the banner absolutely within its containing element */
+  position: absolute;
+  /* Centers the banner vertically and horizontally */
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Sets the stacking order of the banner above the image */
+  z-index: 2;
+  /* Defines the text color */
+  color: $text-primary;
+  /* Sets the background color */
+  background-color: $primary-color;
+  /* Adds padding around the content */
+  padding: 2rem;
+  /* Rounds the corners of the banner */
+  border-radius: 10px;
+  /* Applies a fade-in animation over 5 seconds */
+  animation: fadeIn 5s ease-out;
 }
 
+/* Styles for the text displayed on the splash screen */
 .splash-text {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    color: $text-primary;
-    background-color: $primary-color;
-    animation: fadeIn 10s ease-out;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 10px;
+  /* Positions the text absolutely within its containing element */
+  position: absolute;
+  /* Centers the text vertically and horizontally */
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Sets the stacking order of the text above the image */
+  z-index: 2;
+  /* Defines the text color */
+  color: $text-primary;
+  /* Sets the background color */
+  background-color: $primary-color;
+  /* Adds padding around the content */
+  padding: 1rem;
+  /* Aligns the text in the center */
+  text-align: center;
+  /* Rounds the corners of the text */
+  border-radius: 10px;
+  /* Applies a fade-in animation over 10 seconds */
+  animation: fadeIn 10s ease-out;
 }

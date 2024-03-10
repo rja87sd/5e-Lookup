@@ -1,28 +1,31 @@
+// Header styling. Credit to ChatGPT for code comments.
+
+/* Styles for the header */
 header {
-  background-color: $primary-color;
-  color: $text-primary;
-  font-family: Arial, Helvetica, sans-serif;
-  border-bottom: solid 2px $secondary-color;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0 2rem;
-  z-index: 2;
-  @include flex-head;
+  background-color: $primary-color; /* Set the background color of the header */
+  color: $text-primary; /* Set the text color */
+  font-family: Arial, Helvetica, sans-serif; /* Set the font family */
+  border-bottom: solid 2px $secondary-color; /* Add a solid border at the bottom */
+  position: absolute; /* Position the header */
+  top: 0; /* Align the header to the top of the viewport */
+  left: 0; /* Align the header to the left of the viewport */
+  width: 100%; /* Set the width to span the entire viewport */
+  padding: 0 2rem; /* Add padding to the header */
+  z-index: 2; /* Set the z-index to ensure the header appears above other content */
+  @include flex-head; /* Apply flexbox layout for horizontal alignment */
   ul {
-    @include flex;
-    gap: 3rem;
+    @include flex; /* Apply flexbox layout to the unordered list */
+    gap: 3rem; /* Set the gap between list items */
     li {
-        list-style: none;
-        font-weight: bold;
-        &:hover{
-            opacity: 0.8;
-            transition: opacity 0.5s ease;
-        }
+      list-style: none; /* Remove default list styles */
+      font-weight: bold; /* Set the font weight to bold for list items */
+      &:hover {
+        opacity: 0.8; /* Reduce opacity on hover */
+        transition: opacity 0.5s ease; /* Add transition effect for opacity */
+      }
       a {
-        text-decoration: none;
-        color: $text-primary;
+        text-decoration: none; /* Remove underline from anchor links */
+        color: $text-primary; /* Set the text color for anchor links */
       }
     }
   }

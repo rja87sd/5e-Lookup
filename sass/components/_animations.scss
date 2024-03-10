@@ -1,8 +1,13 @@
+// Animations. Credit to ChatGPT for comments.
+
+/* Define a keyframe animation called fadeIn */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  /* Define the starting keyframe */
+  from {
+    opacity: 0; /* Set opacity to 0 (fully transparent) */
+  }
+  /* Define the ending keyframe */
+  to {
+    opacity: 1; /* Set opacity to 1 (fully opaque) */
+  }
 }

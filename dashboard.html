@@ -1,48 +1,71 @@
+<!-- Dashboard page. Credit to ChatGPT for comments. -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Declares the character encoding for the document -->
     <meta charset="UTF-8">
+    <!-- Sets the viewport width to the device width and initial zoom level to 1 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Defines the title of the document -->
+    <title>5e Spell Lookup | Dashboard</title>
+    <!-- Links the external stylesheet to the HTML document -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Header section containing the site title and navigation menu -->
     <header>
+        <!-- Main title of the site -->
         <h1>
             5e Spell Lookup
         </h1>
 
+        <!-- Navigation menu -->
         <nav>
             <ul>
+                <!-- List item with a link to the home page -->
                 <li><a href="index.html">Home</a></li>
+                <!-- List item with a link to the about page -->
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main content section -->
     <main id="dash-main">
+        <!-- Form for searching spells -->
         <form id="spellSearchForm">
-            <label for="spellName"><h2>Enter spell name:</h2></label>
+            <!-- Label for the spell name input -->
+            <label for="spellName">
+                <h2>Enter spell name:</h2>
+            </label>
+            <!-- Input field for entering the spell name -->
             <input type="text" id="spellName" name="spellName" required>
+            <!-- Button to submit the form -->
             <button type="submit" class="btn">Search</button>
         </form>
 
+        <!-- Line break -->
         <br>
 
+        <!-- Section for displaying spellbook -->
         <section id="spellbook">
 
         </section>
     </main>
 
+    <!-- Footer section -->
     <footer>
+        <!-- Copyright notice -->
         <h6>
             &copy; Ryan Arnold | Dungeons & Dragons &copy; Wizards of the Coast
         </h6>
     </footer>
 
+    <!-- External JavaScript file -->
     <script src="script.js"></script>
 </body>
 

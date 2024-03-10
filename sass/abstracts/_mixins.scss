@@ -1,30 +1,37 @@
+// Mixins. Credit to ChatGPT for code comments.
+
+// Mixin for creating a flexbox layout with items evenly spaced and centered horizontally
 @mixin flex-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; // Use flexbox layout
+  justify-content: space-between; // Items are spaced evenly along the main axis
+  align-items: center; // Items are centered vertically along the cross axis
 }
 
+// Mixin for creating a flexbox layout with items arranged in a column
 @mixin flex-column {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+  display: flex; // Use flexbox layout
+  justify-content: flex-start; // Items are aligned to the start of the main axis (top for column layout)
+  flex-direction: column; // Items are arranged in a column
 }
 
+// Mixin for creating a flexbox layout with items centered both horizontally and vertically
 @mixin flex {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  display: flex; // Use flexbox layout
+  justify-content: center; // Items are centered horizontally along the main axis
+  gap: 10px; // Spacing between items
 }
 
+// Mixin for creating a flexbox layout with items centered both horizontally and vertically
 @mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; // Use flexbox layout
+  justify-content: center; // Items are centered horizontally along the main axis
+  align-items: center; // Items are centered vertically along the cross axis
 }
 
+// Mixin for creating a flexbox layout with items arranged in a column and centered horizontally
 @mixin flex-center-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  display: flex; // Use flexbox layout
+  flex-direction: column; // Items are arranged in a column
+  justify-content: flex-start; // Items are aligned to the start of the main axis (top for column layout)
+  align-items: center; // Items are centered vertically along the cross axis
 }

@@ -1,11 +1,14 @@
+// Footer element styling. Credit to ChatGPT for comments.
+
+/* Style for the footer */
 footer {
-  position: absolute;
-  bottom: 0;
-  border-top: solid 2px $secondary-color;
-  background-color: $primary-color;
-  color: $text-primary;
-  text-align: center;
-  height: 30px;
-  width: 100%;
-  @include flex-center;
+  position: absolute; /* Position the footer at the bottom */
+  bottom: 0; /* Align the footer to the bottom of the viewport */
+  border-top: solid 2px $secondary-color; /* Add a solid border at the top */
+  background-color: $primary-color; /* Set the background color */
+  color: $text-primary; /* Set the text color */
+  text-align: center; /* Center-align the text */
+  height: 30px; /* Set the height of the footer */
+  width: 100%; /* Set the width to span the entire viewport */
+  @include flex-center; /* Apply flexbox layout to center content vertically and horizontally */
 }

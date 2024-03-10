@@ -1,26 +1,33 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+// Base reset. Credit to ChatGPT for comments.
+
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-:root{
-    font-size: 10px;
+/* Set the base font size to 10px for easier rem calculations */
+:root {
+  font-size: 10px;
 }
 
-body{
-    font-size: 1.6rem;
-
+/* Set the default font size for the body */
+body {
+  font-size: 1.6rem; /* Equivalent to 16px */
 }
 
-header{
-    height: 70px;
+/* Style for the header element */
+header {
+  height: 70px; /* Set the height of the header */
 }
 
-main{
-    height: 100%;
+/* Style for the main element */
+main {
+  height: 100%; /* Set the height of the main content */
 }
 
-footer{
-    height: 40px;
+/* Style for the footer element */
+footer {
+  height: 40px; /* Set the height of the footer */
 }

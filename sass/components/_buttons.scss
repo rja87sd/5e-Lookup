@@ -1,45 +1,55 @@
+// Button styling. Credit to ChatGPT for assistance and comments.
+
+/* Define styles for the general button */
 .btn {
-  padding: 1rem;
-  border: none;
-  height: auto;
-  width: 100px;
-  background-color: $secondary-color;
-  color: $text-primary;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 5px;
+  padding: 1rem; /* Add padding */
+  border: none; /* Remove border */
+  height: auto; /* Automatically adjust height */
+  width: 100px; /* Set fixed width */
+  background-color: $secondary-color; /* Set background color */
+  color: $text-primary; /* Set text color */
+  font-family: Arial, Helvetica, sans-serif; /* Specify font family */
+  font-size: 2rem; /* Set font size */
+  font-weight: bold; /* Set font weight */
+  text-align: center; /* Align text to center */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Add border radius */
+
+  /* Define styles for button hover state */
   &:hover {
-    opacity: 0.9;
+    opacity: 0.9; /* Reduce opacity on hover */
   }
 }
 
+/* Define styles for the enter button */
 .btn--enter {
-  position: absolute; 
-  bottom: 3%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  height: auto;
-  width: 100px;
-  background-color: $secondary-color;
-  text-align: center;
-  line-height: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px 0px;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 5px 5px 5px black;
-  transition: opacity 0.3s ease;
-  animation: fadeIn 5s ease-out;
+  position: absolute; /* Position absolute */
+  bottom: 3%; /* Distance from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center vertically */
+  z-index: 2; /* Set stacking order */
+  height: auto; /* Automatically adjust height */
+  width: 100px; /* Set fixed width */
+  background-color: $secondary-color; /* Set background color */
+  text-align: center; /* Align text to center */
+  line-height: 30px; /* Set line height */
+  font-family: Arial, Helvetica, sans-serif; /* Specify font family */
+  padding: 5px 0px; /* Add padding */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Change cursor to pointer */
+  box-shadow: 5px 5px 5px black; /* Add box shadow */
+  transition: opacity 0.3s ease; /* Add transition effect */
+  animation: fadeIn 5s ease-out; /* Apply fadeIn animation */
+
+  /* Define styles for anchor tag inside the button */
   a {
-    text-decoration: none;
-    color: $text-primary;
+    text-decoration: none; /* Remove underline */
+    color: $text-primary; /* Set text color */
   }
+
+  /* Define styles for button hover state */
   &:hover {
-    opacity: 0.8;
-    cursor: pointer;
+    opacity: 0.8; /* Reduce opacity on hover */
+    cursor: pointer; /* Change cursor to pointer */
   }
 }

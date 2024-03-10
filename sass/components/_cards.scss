@@ -1,41 +1,44 @@
-.spell-card {
-  box-shadow: 5px 5px 5px $primary-color;
-  padding: 1rem;
-  background-color: $quaternary-color;
-  color: $text-primary;
-  border-radius: 5px;
-  max-height: 500px;
-  width: 75%;
-  margin: auto;
-  overflow: scroll;
-  overflow-x: hidden;
+// Card styling. Credit to ChatGPT for comments.
 
+/* Define styles for the spell card */
+.spell-card {
+  box-shadow: 5px 5px 5px $primary-color; /* Add box shadow */
+  padding: 1rem; /* Add padding */
+  background-color: $quaternary-color; /* Set background color */
+  color: $text-primary; /* Set text color */
+  border-radius: 5px; /* Add border radius */
+  max-height: 500px; /* Set maximum height */
+  width: 75%; /* Set width */
+  margin: auto; /* Center horizontally */
+  overflow: scroll; /* Enable scrolling */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+
+  /* Define styles for spell card details */
   &__details {
     strong {
-      color: $text-secondary;
+      color: $text-secondary; /* Set color for strong elements */
     }
 
-    // Credit to Geeks For Geeks for hr styling.
+    /* Credit to Geeks For Geeks for hr styling */
     hr {
-      background-color: $secondary-color;
-      height: 2px;
-      border: none;
+      background-color: $secondary-color; /* Set background color */
+      height: 2px; /* Set height */
+      border: none; /* Remove border */
     }
-
   }
 
   /* Scrollbar Styling */
   &::-webkit-scrollbar {
-    width: 12px;
+    width: 12px; /* Set width of scrollbar */
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #555555;
-    border-radius: 5px;
+    background-color: #555555; /* Set color of scrollbar thumb */
+    border-radius: 5px; /* Add border radius */
   }
 
   &::-webkit-scrollbar-track {
-    background-color: #333333;
-    border-radius: 5px;
+    background-color: #333333; /* Set color of scrollbar track */
+    border-radius: 5px; /* Add border radius */
   }
 }

@@ -1,47 +1,53 @@
+// Styling for the about page. Credit to ChatGPT for comments.
+
+/* Styles for the about-main container */
 #about-main {
-  z-index: 1;
-  position: relative;
-  border: solid 2px $secondary-color;
-  background-color: $primary-color;
-  color: $text-primary;
-  top: 15%;
-  margin: auto;
-  width: 90%;
-  height: 75%;
-  padding: 15px;
-  overflow: auto;
-  overflow-x: hidden;
-  @include flex-center-column;
+  z-index: 1; /* Set the stacking order */
+  position: relative; /* Set the position */
+  border: solid 2px $secondary-color; /* Add a border */
+  background-color: $primary-color; /* Set the background color */
+  color: $text-primary; /* Set the text color */
+  top: 15%; /* Position from the top */
+  margin: auto; /* Center the container horizontally */
+  width: 90%; /* Set the width */
+  height: 75%; /* Set the height */
+  padding: 15px; /* Add padding */
+  overflow: auto; /* Enable overflow scrolling */
+  overflow-x: hidden; /* Hide horizontal overflow */
+  @include flex-center-column; /* Apply flexbox styles for centering content vertically */
 
+  /* Styles for images inside the container */
   img {
-    height: auto;
-    width: 10%;
-    border-radius: 5px;
+    height: auto; /* Automatically adjust height */
+    width: 10%; /* Set the width */
+    border-radius: 5px; /* Add border radius */
   }
 
-  // Credit to Geeks For Geeks for hr styling.
+  /* Styles for horizontal rule */
   hr {
-    background-color: $secondary-color;
-    height: 2px;
-    width: 100%;
-    border: none;
+    background-color: $secondary-color; /* Set the background color */
+    height: 2px; /* Set the height */
+    width: 100%; /* Set the width */
+    border: none; /* Remove border */
   }
 
+  /* Styles for paragraphs */
   p {
-    text-align: center;
+    text-align: center; /* Center align text */
   }
 
+  /* Scrollbar Styling */
   &::-webkit-scrollbar {
-    width: 12px;
+    width: 12px; /* Set the width of the scrollbar */
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #555555;
-    border-radius: 5px;
+    background-color: #555555; /* Set the background color of the scrollbar thumb */
+    border-radius: 5px; /* Add border radius to the scrollbar thumb */
   }
 
   &::-webkit-scrollbar-track {
-    background-color: #333333;
-    border-radius: 5px;
+    background-color: #333333; /* Set the background color of the scrollbar track */
+    border-radius: 5px; /* Add border radius to the scrollbar track */
   }
 }

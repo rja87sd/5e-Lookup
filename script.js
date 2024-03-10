@@ -3,9 +3,9 @@
 //  This script fetches spell data from the D&D 5e API based on user input,
 //  and displays spell details on the web page, allowing users to search for
 //  specific spells and view their information. Credit to Lewis Benson and
-//  ChatGPT for assistance.
+//  ChatGPT for assistance. Credit to ChatGPT for comments.
 
-"use strict";
+"use strict"; // Enables strict mode to catch common coding mistakes and improve performance
 
 // Define the base URL for the D&D 5e API
 const BASE_URL = "https://www.dnd5eapi.co";
@@ -16,8 +16,9 @@ const searchForm = document.getElementById("spellSearchForm");
 // Define a class to represent a spell
 class Spell {
   constructor(spellData) {
-    this.name = spellData.name;
-    this.url = spellData.url;
+    // Constructor to initialize spell properties
+    this.name = spellData.name; // Spell name
+    this.url = spellData.url; // Spell URL
   }
 
   // Method to display the spell details on the page
@@ -48,6 +49,7 @@ class Spell {
   // Method to fetch detailed information about the spell from the API
   async fetchSpellDetails() {
     try {
+      // Fetch spell details from the API
       const response = await fetch(BASE_URL + this.url);
       const spellData = await response.json();
 
@@ -71,7 +73,7 @@ class Spell {
       // Log the spell object to console
       console.log("Spell Object:", spellData);
 
-      // Display the desc parameter from the spell
+      // Display the description parameter from the spell
       if (spellData.desc && spellData.desc.length > 0) {
         spellDetailsDiv.innerHTML += `<p><strong>Description:</strong> ${spellData.desc[0]}</p>`;
         for (let i = 1; i < spellData.desc.length; i++) {
@@ -79,6 +81,7 @@ class Spell {
         }
       }
     } catch (error) {
+      // Handle errors when fetching spell data
       console.log("Error fetching spell data:", error);
     }
   }
@@ -109,6 +112,7 @@ searchForm.addEventListener("submit", async (e) => {
         console.log("Spell not found.");
       }
     } catch (error) {
+      // Handle errors when fetching spell data
       console.log("Error fetching spell data:", error);
     }
   } else {

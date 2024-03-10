@@ -1,12 +1,14 @@
+// Styling for the dashboard page. Credit to ChatGPT for comments.
+
 #dash-main {
-  z-index: 1;
-  position: relative;
-  border: solid 2px $secondary-color;
-  background-color: black;
-  top: 15%;
-  margin: auto;
-  width: 90%;
-  height: auto;
-  padding: 15px;
-  @include flex-column;
+  z-index: 1; /* Sets the stacking order of the element */
+  position: relative; /* Defines the positioning context for the element */
+  border: solid 2px $secondary-color; /* Adds a solid border around the element with a thickness of 2 pixels and a color based on the $secondary-color variable */
+  background-color: black; /* Sets the background color of the element to black */
+  top: 15%; /* Positions the element 15% from the top of its containing element */
+  margin: auto; /* Centers the element horizontally within its containing element */
+  width: 90%; /* Sets the width of the element to 90% of its containing element */
+  height: auto; /* Allows the height of the element to adjust automatically based on its content */
+  padding: 15px; /* Adds internal spacing of 15 pixels to the element */
+  @include flex-column; /* Applies a mixin to set the element's display property to flex and its flex-direction to column */
 }
