@@ -48,12 +48,10 @@ header {
 @include breakpoint-xs {
   /* Targets the header section for adjustments */
   header {
-    /* Targets the h1 element within the header for adjustments */
     h1 {
       /* Sets the font size of the h1 element */
       font-size: 1.6rem;
     }
-    /* Targets the form within the header for adjustments */
     form {
       /* Applies flex-center-column mixin to the form within the header */
       @include flex-center-column;

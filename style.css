@@ -252,10 +252,6 @@ header ul li a {
 /* Applies query selector to the element for extra small screens (less than 480px) */
 @media (max-width: 480px) {
   /* Targets the header section for adjustments */
-  header {
-    /* Targets the h1 element within the header for adjustments */
-    /* Targets the form within the header for adjustments */
-  }
   header h1 {
     /* Sets the font size of the h1 element */
     font-size: 1.6rem;
@@ -431,8 +427,6 @@ main {
 @media (max-width: 480px) {
   /* Targets the main content section for adjustments */
   #dash-main {
-    /* Reduces the font size of the main content section */
-    font-size: -25%;
     /* Sets the height of the main content section */
     height: 75%;
     /* Applies flex-center-column mixin to the form within the main content */
