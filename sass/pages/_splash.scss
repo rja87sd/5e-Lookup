@@ -45,6 +45,8 @@
   border-radius: 10px;
   /* Applies a fade-in animation over 5 seconds */
   animation: fadeIn 5s ease-out;
+
+  text-align: center;
 }
 
 /* Styles for the text displayed on the splash screen */
@@ -70,3 +72,19 @@
   /* Applies a fade-in animation over 10 seconds */
   animation: fadeIn 10s ease-out;
 }
+
+/* Applies query selector to the element for extra small screens (less than 480px) */
+@include breakpoint-xs {
+  /* Targets the splash-text element for adjustments */
+  .splash-text {
+    /* Adjusts the top position to center vertically on extra small screens */
+    top: 50%;
+    /* Sets the maximum height of the splash-text element */
+    max-height: 300px;
+    /* Sets the width of the splash-text element */
+    width: 200px;
+    /* Adds scroll functionality to the splash-text element if content overflows */
+    overflow: scroll;
+  }
+}
+

@@ -30,3 +30,41 @@ header {
     }
   }
 }
+
+/* Applies query selector to the element for small screens (768px to 991px) */
+@include breakpoint-sm {
+  /* Targets the main content section for adjustments */
+  #dash-main {
+    /* Sets the height of the main content section */
+    height: 75%;
+    /* Applies flex-center-column mixin to the form within the main content */
+    form {
+      @include flex-center-column;
+    }
+  }
+}
+
+/* Applies query selector to the element for extra small screens (less than 480px) */
+@include breakpoint-xs {
+  /* Targets the header section for adjustments */
+  header {
+    /* Targets the h1 element within the header for adjustments */
+    h1 {
+      /* Sets the font size of the h1 element */
+      font-size: 1.6rem;
+    }
+    /* Targets the form within the header for adjustments */
+    form {
+      /* Applies flex-center-column mixin to the form within the header */
+      @include flex-center-column;
+      /* Targets the input field within the form for adjustments */
+      input {
+        /* Sets the width of the input field to 100% */
+        width: 100%;
+        /* Sets the height of the input field to auto */
+        height: auto;
+      }
+    }
+  }
+}
+

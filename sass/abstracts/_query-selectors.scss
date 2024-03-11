@@ -1,0 +1,43 @@
+// Query selectors. Credit to ChatGPT for comments.
+
+// Defines breakpoints for different screen sizes
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
+// Mixin for extra small screens (less than 480px)
+@mixin breakpoint-xs {
+  // Media query for extra small screens
+  @media (max-width: $breakpoint-xs) {
+    // Includes content within this mixin at extra small screen sizes
+    @content;
+  }
+}
+
+// Mixin for small screens (between 480px and 767px)
+@mixin breakpoint-sm {
+  // Media query for small screens
+  @media (min-width: ($breakpoint-xs + 1)) and (max-width: $breakpoint-sm) {
+    // Includes content within this mixin at small screen sizes
+    @content;
+  }
+}
+
+// Mixin for medium screens (between 768px and 991px)
+@mixin breakpoint-md {
+  // Media query for medium screens
+  @media (min-width: ($breakpoint-sm + 1)) and (max-width: $breakpoint-md) {
+    // Includes content within this mixin at medium screen sizes
+    @content;
+  }
+}
+
+// Mixin for large screens (greater than 992px)
+@mixin breakpoint-lg {
+  // Media query for large screens
+  @media (min-width: ($breakpoint-md + 1)) {
+    // Includes content within this mixin at large screen sizes
+    @content;
+  }
+}

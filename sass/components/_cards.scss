@@ -19,8 +19,8 @@
       color: $text-secondary; /* Set color for strong elements */
     }
 
-    /* Credit to Geeks For Geeks for hr styling */
     hr {
+      /* Credit to Geeks For Geeks for hr styling */
       background-color: $secondary-color; /* Set background color */
       height: 2px; /* Set height */
       border: none; /* Remove border */
@@ -40,5 +40,25 @@
   &::-webkit-scrollbar-track {
     background-color: #333333; /* Set color of scrollbar track */
     border-radius: 5px; /* Add border radius */
+  }
+}
+
+// Adjusts the styling of the .spell-card element for small screens (768px and above)
+@include breakpoint-sm {
+  // Sets the maximum height of the .spell-card element to 350px
+  .spell-card {
+    max-height: 350px;
+    // Allows the width of the .spell-card element to adjust automatically based on content
+    width: auto;
+  }
+}
+
+// Adjusts the styling of the .spell-card element for extra small screens (less than 768px)
+@include breakpoint-xs {
+  // Sets the maximum height of the .spell-card element to 300px
+  .spell-card {
+    max-height: 300px;
+    // Allows the width of the .spell-card element to adjust automatically based on content
+    width: auto;
   }
 }
