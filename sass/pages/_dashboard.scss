@@ -30,8 +30,6 @@
 @include breakpoint-xs {
   /* Targets the main content section for adjustments */
   #dash-main {
-    /* Reduces the font size of the main content section */
-    font-size: -25%;
     /* Sets the height of the main content section */
     height: 75%;
     /* Applies flex-center-column mixin to the form within the main content */
